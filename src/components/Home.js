@@ -62,7 +62,7 @@ export default class Home extends Component {
                                 
                                
                                     <div key={index} className="listings-container compact-list-layout margin-top-35 ">
-                                        <a href={`/${book.bookId}`} className="listing with-apply-button">
+                                        <a href={`book-detail/${book.bookId}`} className="listing with-apply-button">
                                             <div className="listing-details">
                                     
                                                 <div className="listing-description">
