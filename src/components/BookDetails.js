@@ -30,7 +30,7 @@ export default class BookDetails extends Component {
 
         axios({
             method: "GET",
-            url: "/book-characters/"+bookId,
+            url: "https://php-assessment-webcoded.herokuapp.com/api/book-characters/"+bookId,
         })
             .then((response) => {
                 const { data } = response;
@@ -50,7 +50,7 @@ export default class BookDetails extends Component {
 
         axios({
             method: "GET",
-            url: "/get-comment/" + bookId,
+            url: "https://php-assessment-webcoded.herokuapp.com/api/get-comment/" + bookId,
         })
             .then((response) => {
                 const { data } = response;
@@ -87,7 +87,7 @@ export default class BookDetails extends Component {
             formData.append("Comment", Comment);
            
 
-            axios.post("/create-comment", formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+            axios.post("https://php-assessment-webcoded.herokuapp.com/api/create-comment", formData, { headers: { 'Content-Type': 'multipart/form-data' } })
                 .then((response) => {
                 toast.success(`Message: ${response.data.Message}`);
                 this.setState({Comment: '' })
