@@ -27,7 +27,7 @@ export default class Home extends Component {
             .then((response) => {
                 const { data } = response;
                 this.setState({ Error: data.Error, Data: data.data, isLoaded: true})
-               
+                console.log(response)
             })
             .catch((error) => {
 
