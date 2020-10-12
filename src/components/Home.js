@@ -22,7 +22,7 @@ export default class Home extends Component {
 
         axios({
             method: "GET",
-            url: "/books",
+            url: "https://php-assessment-webcoded.herokuapp.com/api/books",
         })
             .then((response) => {
                 const { data } = response;
