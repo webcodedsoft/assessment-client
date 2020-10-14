@@ -30,25 +30,25 @@ export default class Documentation extends Component {
                                                 <tr>
                                                     <th scope="row"><code>GET</code></th>
                                                     <th scope="row"><code>/books</code></th>
-                                                    <td>Basic HTML meta tags and everything that could be in </td>
+                                                    <td>Get books list </td>
                                                     <td><code>https://php-assessment-webcoded.herokuapp.com/api/books</code></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row"><code>GET</code></th>
                                                     <th scope="row"><code>/characters</code></th>
-                                                    <td>Body &amp; wrapper close</td>
+                                                    <td>Get character list</td>
                                                     <td><code>https://php-assessment-webcoded.herokuapp.com/api/characters</code></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row"><code>GET</code></th>
                                                     <th scope="row"><code>/book-characters</code></th>
-                                                    <td>Main Navigation or menu</td>
+                                                    <td>Get book character</td>
                                                     <td><code>https://php-assessment-webcoded.herokuapp.com/api/book-characters/1</code></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row"><code>POST</code></th>
                                                     <th scope="row"><code>/create-comment</code></th>
-                                                    <td>Responsible for site pre header</td>
+                                                    <td>Create comment under book</td>
                                                     <td>Form Body <code>bookId, Comment </code></td>
                                                 </tr>
                                                 <tr>
